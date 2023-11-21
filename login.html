@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kristijan's Login UI Project</title>
     <link rel="stylesheet" href="login-styles.css">
+    <script src="login.js"></script>
 </head>
 <body>
-    <div class="center">
+    <form class="center" action="login.html" method="POST">
+        
         <div class="container">
             <h1>Sign in</h1>
-            <input type="text" placeholder="Username">
-            <input type="password" placeholder="Password">
-            <button>Sign in</button>
+            <input type="text" name="" placeholder="Username" id="username">
+            <input type="password" name="" placeholder="Password" id="password">
+            <input type="submit" name="" value="Sign in" onclick="validate()">
         </div>
-    </div>
+        
+    </form>
 </body>
 </html>
