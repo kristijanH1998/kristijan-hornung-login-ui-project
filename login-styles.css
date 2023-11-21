@@ -1,0 +1,45 @@
+html {
+    background: url('background.jpg') no-repeat center center fixed;
+    
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.container {
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    padding: 25px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 10px;
+    min-width: 400px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+}
+input {
+    border: none;
+    border-bottom: 2px solid black;
+    margin: 20px;
+}
+
+button {
+    border-radius: 20px;
+    margin: 10px;
+    border: none; 
+    color: white; 
+    padding: 14px 28px; 
+    cursor: pointer; 
+    background-color: #2196F3;
+    width: 50%;
+    padding: 10px;
+}
