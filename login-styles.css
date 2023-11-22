@@ -1,6 +1,8 @@
 html {
     background: url('background.jpg') no-repeat center center fixed;
-    
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
 }
 .center {
     display: flex;
@@ -17,19 +19,25 @@ html {
     border-radius: 10px;
     min-width: 400px;
     min-height: 200px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    row-gap: 10px;
 }
 
-h1 {
-    font-family: Arial, sans-serif;
-}
 input[type]:not([type='submit']) {
     border: none;
     border-bottom: 2px solid black;
     margin: 20px;
+    outline: none;
+    padding-left: 15px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    border-bottom-width: 2px;
+    transition: all 0.4s ease;
 }
 
 input[type="submit"] {
@@ -39,10 +47,34 @@ input[type="submit"] {
     color: white; 
     padding: 14px 28px; 
     cursor: pointer; 
-    background-color: #2196F3;
+    background: -webkit-linear-gradient(left, lightblue, blue);
     width: 50%;
     padding: 10px;
 }
 input[type="submit"]:hover {
-    background: #00BFFF;
+    background: -webkit-linear-gradient(right, lightblue, blue);
+}
+.pass-link a, .signup-link a{
+    margin: 10px;
+    text-decoration: none;  
+    color: #fa4299;
+}
+.pass-link a:hover, .signup-link a:hover{
+    text-decoration: underline;
+}
+.wrapper {
+    max-width: 390px;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+}
+.wrapper .title-text {
+    display: flex;
+    width: 200%;
+}
+.wrapper .title-text .title{
+    width: 50%;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
 }
