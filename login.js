@@ -1,3 +1,13 @@
+function new_account(){
+    var name = document.getElementById("user").value;
+    var pw = document.getElementById("pw").value;
+    var pw2 = document.getElementById("pw2").value;
+    if(name != "" && pw != "" && pw2 != ""){
+        alert("Success! Your account has been created.");
+    } else {
+        alert("Try again.");
+    }
+}
 function validate() {
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
