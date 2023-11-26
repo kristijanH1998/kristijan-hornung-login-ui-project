@@ -1,38 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
 html {
     background: url('background.jpg') no-repeat center center fixed;
 }
-body {
-    font-family: 'Courier New', Courier, monospace;
-    display: flex;
-    justify-content: center;
-}
-.form-inner {
+html,body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
 }
-.container {
+.wrapper {
     background-color: rgba(0,0,0,.5);
     color: white;
-    padding: 25px;
+    padding: 30px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     border-radius: 10px;
-    min-width: 400px;
-    min-height: 200px;
-    height: 400px;
+    max-width: 390px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     row-gap: 10px;
 }
+.wrapper .title-text {
+    display: flex;
+    width: 200%;
+}
+.wrapper .title-text .title {
+    width: 50%;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+.wrapper .form-container {
+    width: 100%;
+}
+.form-container .form-inner form {
 
-input[type]:not([type='submit']) {
-    border: none;
-    border-bottom: 2px solid black;
-    margin: 20px;
+}
+
+.form-inner form .field {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+.form-inner form .field input {
+    height: 100%;
+    width: 100%;
     outline: none;
     padding-left: 15px;
     font-size: 17px;
@@ -42,58 +60,35 @@ input[type]:not([type='submit']) {
     transition: all 0.4s ease;
 }
 
-input[type="submit"] {
-    border-radius: 20px;
-    margin: 10px;
-    border: none; 
-    color: white; 
-    padding: 14px 28px; 
-    cursor: pointer; 
-    background: -webkit-linear-gradient(left, lightblue, blue);
-    width: 50%;
-    padding: 10px;
+.form-inner form .field input:focus {
+    border-color: #fc83bb;
 }
-input[type="submit"]:hover {
-    background: -webkit-linear-gradient(right, lightblue, blue);
+
+.form-inner form .pass-link {
+    margin-top: 5px;
 }
-.pass-link a, .signup-link a{
-    margin: 10px;
-    text-decoration: none;  
+.form-inner form .pass-link a,
+.form-inner form .signup-link a {
     color: #fa4299;
+    text-decoration: none;
 }
-.pass-link a:hover, .signup-link a:hover{
+.form-inner form .pass-link a:hover,
+.form-inner form .signup-link a:hover {
     text-decoration: underline;
 }
-.wrapper {
-    overflow: hidden;
-    max-width: 450px;
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
-}
-.wrapper .title-text {
-    display: flex;
-    width: 200%;
-}
-.wrapper .title-text .title{
-    width: 50%;
-    font-size: 35px;
-    font-weight: 600;
+.form-inner form .signup-link {
     text-align: center;
+    margin-top: 30px;
 }
-.wrapper .form-container {
-    width: 100%;
-    overflow: hidden;
+form .field input[type="submit"]{
+    background: -webkit-linear-gradient(left, lightblue, blue);
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 0px;
+    border: none;
+    cursor: pointer;
 }
-.form-container  {
-    display: flex;
-    width: 200%;
-}
-.form-container form{
-    width: 50%;
-}
-.form-container form .field{
-    height: 50px;
-    width: 100%;
-    margin-top: 20px;
-}
+
+
+
+
