@@ -13,11 +13,16 @@ const signupForm = document.querySelector("form.signup");
 const loginBtn = document.querySelector("label.login");
 const signupBtn = document.querySelector("label.signup");
 const signupLink = document.querySelector(".signup-link a");
+const loginText = document.querySelector(".title-text .login");
+const signupText = document.querySelector(".title-text .signup");
+
 signupBtn.onclick = (()=>{
-    formInner.style.flexDirection = "row-reverse";
+    loginForm.style.marginLeft = "-50%";
+    loginText.style.marginLeft = "-50%";
 });
 loginBtn.onclick = (()=>{
-    formInner.style.flexDirection = "row";
+    loginForm.style.marginLeft = "0%";
+    loginText.style.marginLeft = "0%";
 });
 signupLink.onclick = (()=>{
     signupBtn.click();

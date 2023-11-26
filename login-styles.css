@@ -35,6 +35,7 @@ html,body{
     font-size: 35px;
     font-weight: 600;
     text-align: center;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
 }
 .wrapper .form-container {
     width: 100%;
@@ -85,6 +86,7 @@ input[type="radio"] {
 }
 #signup:checked ~ .slide-tab {
     left: 50%;
+    background: -webkit-linear-gradient(right, rgb(208, 230, 173), rgb(255, 38, 0));
 }
 #signup:checked ~ .signup {
     color: #fff;
