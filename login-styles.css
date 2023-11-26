@@ -1,6 +1,4 @@
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -39,8 +37,13 @@ html,body{
 .wrapper .form-container {
     width: 100%;
 }
-.form-container .form-inner form {
 
+.form-container .form-inner form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
 }
 
 .form-inner form .field {
@@ -80,13 +83,17 @@ html,body{
     text-align: center;
     margin-top: 30px;
 }
-form .field input[type="submit"]{
+form input[type="submit"]{
     background: -webkit-linear-gradient(left, lightblue, blue);
+    color: white;
     font-size: 20px;
     font-weight: 500;
     padding-left: 0px;
     border: none;
     cursor: pointer;
+}
+form input[type="submit"]:hover{
+    background: -webkit-linear-gradient(right, lightblue, blue);
 }
 
 
