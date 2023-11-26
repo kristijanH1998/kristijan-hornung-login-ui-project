@@ -8,22 +8,31 @@
     <script src="login.js"></script>
 </head>
 <body>
-    <form class="center" action="login.html" method="POST">
-        
-        <div class="container">
-            <div class="wrapper">
-                <div class="title-text">
-                    <div class="title login">Login Form</div>
-                    <div class="title signup">Signup Form</div>
-                </div>
+    <div class="wrapper">
+        <div class="form-container">
+            <div class="form-inner center">
+                <form action="login.html" method="POST"> 
+                    <div class="container">
+                        <h2 class="title login">Login Form</h2>
+                        <input type="text" name="" placeholder="Username" id="username" required>
+                        <input type="password" name="" placeholder="Password" id="password" required>
+                        <div class="pass-link"><a href="#">Forgot password?</a></div>
+                        <input type="submit" name="" value="Sign in" onclick="validate()">
+                        <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
+                    </div>
+                </form>
+                <form action="login.html" method="POST">
+                    <div class="container">
+                        <h2 class="title signup">Signup Form</h2>
+                        <input type="text" name="" placeholder="Username" id="username" required>
+                        <input type="password" name="" placeholder="Password" id="password" required>
+                        <div class="pass-link"><a href="#">Forgot password?</a></div>
+                        <input type="submit" name="" value="Sign in" onclick="validate()">
+                        <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
+                    </div>
+                </form>
             </div>
-            <input type="text" name="" placeholder="Username" id="username" required>
-            <input type="password" name="" placeholder="Password" id="password" required>
-            <div class="pass-link"><a href="#">Forgot password?</a></div>
-            <input type="submit" name="" value="Sign in" onclick="validate()">
-            <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
         </div>
-        
-    </form>
+    </div>
 </body>
 </html>
