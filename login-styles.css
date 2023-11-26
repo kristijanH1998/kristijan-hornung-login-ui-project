@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -10,6 +10,7 @@ html,body{
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100%;
 }
 .wrapper {
     background-color: rgba(0,0,0,.5);
@@ -38,6 +39,11 @@ html,body{
     width: 100%;
 }
 
+.form-container .form-inner {
+    display: flex;
+    width: 200%;
+}
+
 .form-container .form-inner form {
     display: flex;
     flex-direction: column;
@@ -60,12 +66,11 @@ html,body{
     border-radius: 5px;
     border: 1px solid lightgrey;
     border-bottom-width: 2px;
-    transition: all 0.4s ease;
 }
 
 .form-inner form input:focus {
-    border-color: rgb(121, 121, 233);
-    border-width: 5px;
+    box-shadow: 0 0 20px rgba(230, 208, 252, 0.811);
+    transition: all 0.4s ease;
 }
 
 .form-inner form .pass-link {
@@ -89,10 +94,11 @@ form input[type="submit"]{
     color: white;
     font-size: 20px;
     font-weight: 500;
-    padding: 10px;
+    padding: 7px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    width: 45%;
 }
 form input[type="submit"]:hover{
     background: -webkit-linear-gradient(right, lightblue, blue);
