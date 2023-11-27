@@ -177,7 +177,7 @@ form input[type="submit"]:hover, .prev-3:hover{
 .book {
     display: flex;
     justify-content: space-between;
-    column-gap: 30%;
+    column-gap: 25%;
     width: 70%;
 }
 .book .page {
