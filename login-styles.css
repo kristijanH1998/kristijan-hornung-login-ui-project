@@ -146,7 +146,7 @@ input[type="radio"] {
     text-align: center;
     margin-top: 30px;
 }
-form input[type="submit"], .prev-3{
+form input[type="submit"], .prev-3, .next{
     background: -webkit-linear-gradient(left, lightblue, blue);
     color: white;
     font-size: 20px;
@@ -157,7 +157,7 @@ form input[type="submit"], .prev-3{
     border-radius: 5px;
     width: 55%;
 }
-form input[type="submit"]:hover, .prev-3:hover{
+form input[type="submit"]:hover, .prev-3:hover, .next:hover{
     background: -webkit-linear-gradient(right, lightblue, blue);
 }
 
@@ -270,6 +270,3 @@ form input[type="submit"]:hover, .prev-3:hover{
     display: block;
     color: #fff;
   }
-
-
-
