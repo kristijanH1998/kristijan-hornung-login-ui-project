@@ -174,7 +174,13 @@ form input[type="submit"]:hover, .prev-3:hover{
     font-size: 25px;
     font-weight: 500;
 }
-.page {
+.book {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30%;
+    width: 70%;
+}
+.book .page {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
