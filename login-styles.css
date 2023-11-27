@@ -145,7 +145,7 @@ input[type="radio"] {
     text-align: center;
     margin-top: 30px;
 }
-form input[type="submit"]{
+form input[type="submit"], .prev-3{
     background: -webkit-linear-gradient(left, lightblue, blue);
     color: white;
     font-size: 20px;
@@ -154,9 +154,9 @@ form input[type="submit"]{
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    width: 45%;
+    width: 55%;
 }
-form input[type="submit"]:hover{
+form input[type="submit"]:hover, .prev-3:hover{
     background: -webkit-linear-gradient(right, lightblue, blue);
 }
 
@@ -165,9 +165,21 @@ form input[type="submit"]:hover{
 
 
 
-
-
-
+.btn-flex {
+    display: flex;
+    column-gap: 15px;
+}
+.title-1 {
+    text-align: left;
+    font-size: 25px;
+    font-weight: 500;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: center;
+}
 .progress-bar{
     display: flex;
     margin: 40px 0;
