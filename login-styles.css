@@ -114,6 +114,9 @@ input[type="radio"] {
     width: 100%;
     margin-top: 20px;
 }
+.form-inner form input[type="date"] {
+    height: 160px;
+}
 .form-inner form input {
     height: 50px;
     width: 100%;
@@ -124,7 +127,6 @@ input[type="radio"] {
     border: 1px solid lightgrey;
     border-bottom-width: 2px;
 }
-
 .form-inner form input:focus {
     box-shadow: 0 0 20px rgba(230, 208, 252, 0.811);
     transition: all 0.4s ease;
