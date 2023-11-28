@@ -186,7 +186,7 @@ form input[type="submit"]:hover, .prev-3:hover, .next:hover{
 .book .page {
     display: flex;
     flex-direction: column;
-    row-gap: 15px;
+    row-gap: 10%;
     justify-content: center;
     align-items: center;
     min-width: 100%;
