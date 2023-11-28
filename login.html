@@ -81,36 +81,40 @@
                             <input type="text" name="" placeholder="First Name" required>
                             <input type="text" name="" placeholder="Last Name" required>
                             <div class="btn-flex">
-                                <button class="prev-3">Previous</button>
-                                
+                                <button class="firstNext next">Next</button>
                             </div>
                         </div>
     
     
                         <div class="page">
                             <div class="title-1">
-                                Login Details:
+                                Contact Info:
                              </div>
-                            <input type="text" name="" placeholder="Username" id="user" required>
-                            <input type="password" name="" placeholder="Password" id="pw" required>
-                            <input type="password" name="" placeholder="Confirm password" id="pw2" required>
+                            <input type="email" name="" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" minlength="3" maxlength="64" required>
+                            <input type="tel" name="" placeholder="Phone Number (optional)" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                             <div class="btn-flex">
-                                <button class="prev-3">Previous</button>
-                                <input type="submit" name="" value="Submit" onclick="new_account()">
+                                <button class="prev-1">Previous</button>
+                                <button class="next-1 next">Next</button>
                             </div>
                         </div>
 
 
                         <div class="page">
                             <div class="title-1">
-                                Login Details:
+                                Date of Birth & Gender:
                              </div>
-                            <input type="text" name="" placeholder="Username" id="user" required>
-                            <input type="password" name="" placeholder="Password" id="pw" required>
-                            <input type="password" name="" placeholder="Confirm password" id="pw2" required>
+                            <input type="date" name="" placeholder="Date of Birth" required>
+                            <div class="label">
+                                Gender (optional):
+                            </div>
+                            <select>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Other</option>
+                              </select>
                             <div class="btn-flex">
-                                <button class="prev-3">Previous</button>
-                                <input type="submit" name="" value="Submit" onclick="new_account()">
+                                <button class="prev-2">Previous</button>
+                                <button class="next-2 next">Next</button>
                             </div>
                         </div>
 

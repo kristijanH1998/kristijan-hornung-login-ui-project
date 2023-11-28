@@ -146,7 +146,7 @@ input[type="radio"] {
     text-align: center;
     margin-top: 30px;
 }
-form input[type="submit"], .prev-3, .next{
+form input[type="submit"], .prev-3, .next, .prev-1, .prev-2{
     background: -webkit-linear-gradient(left, lightblue, blue);
     color: white;
     font-size: 20px;
@@ -157,15 +157,22 @@ form input[type="submit"], .prev-3, .next{
     border-radius: 5px;
     width: 55%;
 }
-form input[type="submit"]:hover, .prev-3:hover, .next:hover{
+form input[type="submit"]:hover, .prev-3:hover, .next:hover, .prev-1:hover, .prev-2:hover{
     background: -webkit-linear-gradient(right, lightblue, blue);
 }
 
 
 
 
-
-
+.page label {
+    font-weight: 500;
+}
+.page select{
+    width: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+    font-weight: 500;
+}
 .btn-flex {
     display: flex;
     column-gap: 15px;

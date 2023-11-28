@@ -2,10 +2,12 @@ function new_account(){
     var name = document.getElementById("user").value;
     var pw = document.getElementById("pw").value;
     var pw2 = document.getElementById("pw2").value;
-    if(name != "" && pw != "" && pw2 != ""){
+    if(name != "" && pw != "" && pw2 != "" && (pw == pw2)){
         alert("Success! Your account has been created.");
+    } else if (pw != pw2){
+        alert("Error: Passwords do not match. Try again.");
     } else {
-        alert("Try again.");
+        alert("Error: one or more fields are left empty. Try again.");
     }
 }
 function validate() {
