@@ -177,10 +177,10 @@ form input[type="submit"]:hover, .prev-3:hover, .next:hover{
 }
 .book {
     display: flex;
-    justify-content: flex-end;
-    column-gap: 5%;
-    margin-left: 15%;
-    width: 115vw;
+    justify-content: flex-start;
+    column-gap: 60%;
+    margin-left: 35%;
+    width: 100%;
 }
 .book .page {
     display: flex;
