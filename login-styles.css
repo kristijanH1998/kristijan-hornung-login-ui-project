@@ -169,6 +169,8 @@ form input[type="submit"]:hover, .prev-3:hover, .next:hover{
 .btn-flex {
     display: flex;
     column-gap: 15px;
+    width: 100%;
+    justify-content: center;
 }
 .title-1 {
     text-align: left;
@@ -179,14 +181,15 @@ form input[type="submit"]:hover, .prev-3:hover, .next:hover{
     display: flex;
     justify-content: flex-start;
     column-gap: 60%;
-    margin-left: 35%;
     width: 100%;
 }
 .book .page {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
+    justify-content: center;
     align-items: center;
+    min-width: 100%;
 }
 .progress-bar{
     display: flex;
