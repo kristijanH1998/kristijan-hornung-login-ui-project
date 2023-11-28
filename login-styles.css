@@ -102,13 +102,13 @@ input[type="radio"] {
 .form-container .form-inner form {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    margin-top: 20px;
-    row-gap: 30px;
+    margin-top: 10px;
+    row-gap: 15px;
     width: 50%;
     transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-
 .form-inner form .field {
     height: 50px;
     width: 100%;
@@ -160,7 +160,6 @@ form input[type="submit"], .prev-3, .next, .prev-1, .prev-2{
 form input[type="submit"]:hover, .prev-3:hover, .next:hover, .prev-1:hover, .prev-2:hover{
     background: -webkit-linear-gradient(right, lightblue, blue);
 }
-
 .page label {
     font-weight: 500;
 }
@@ -186,6 +185,8 @@ form input[type="submit"]:hover, .prev-3:hover, .next:hover, .prev-1:hover, .pre
     justify-content: flex-start;
     column-gap: 60%;
     width: 100%;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+    height: 120%;
 }
 .book .page {
     display: flex;
@@ -194,10 +195,12 @@ form input[type="submit"]:hover, .prev-3:hover, .next:hover, .prev-1:hover, .pre
     justify-content: center;
     align-items: center;
     min-width: 100%;
+    margin-bottom: 35px;
 }
 .progress-bar{
     display: flex;
-    margin: 40px 0;
+    margin: 25px 0;
+    margin-bottom: 30px;
     user-select: none;
     justify-content: space-evenly;
     width: 100%;

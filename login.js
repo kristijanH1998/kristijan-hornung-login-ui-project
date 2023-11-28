@@ -28,6 +28,8 @@ const signupLink = document.querySelector(".signup-link a");
 const loginText = document.querySelector(".title-text .login");
 const signupText = document.querySelector(".title-text .signup");
 
+const book = document.querySelector(".book");
+
 signupBtn.onclick = (()=>{
     loginForm.style.marginLeft = "-50%";
     loginText.style.marginLeft = "-50%";
@@ -35,8 +37,37 @@ signupBtn.onclick = (()=>{
 loginBtn.onclick = (()=>{
     loginForm.style.marginLeft = "0%";
     loginText.style.marginLeft = "0%";
+    book.style.marginLeft = "0%";
 });
 signupLink.onclick = (()=>{
     signupBtn.click();
     return false;
 });
+
+const nextFrs = document.querySelector(".firstNext");
+const next1 = document.querySelector(".next-1");
+const next2 = document.querySelector(".next-2");
+const prev1 = document.querySelector(".prev-1");
+const prev2 = document.querySelector(".prev-2");
+const prev3 = document.querySelector(".prev-3");
+
+nextFrs.onclick = (()=>{
+    book.style.marginLeft = "-320%";
+});
+next1.onclick = (()=>{
+    book.style.marginLeft = "-640%";
+});
+next2.onclick = (()=>{
+    book.style.marginLeft = "-960%";
+});
+prev1.onclick = (()=>{
+    book.style.marginLeft = "0%";
+});
+prev2.onclick = (()=>{
+    book.style.marginLeft = "-320%";
+});
+prev3.onclick = (()=>{
+    book.style.marginLeft = "-640%";
+});
+
+
