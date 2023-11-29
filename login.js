@@ -89,18 +89,22 @@ function new_account(){
     var name = document.getElementById("user").value;
     var pw = document.getElementById("pw").value;
     var pw2 = document.getElementById("pw2").value;
-    if(name != "" && pw != "" && pw2 != "" && (pw == pw2)){
+    const frsnm = document.getElementById("firstname").value;
+    const scnm = document.getElementById("lastname").value;
+    const email = document.getElementById("email").value;
+    const birthday = document.getElementById("birthday").value;
+
+    if(name != "" && pw != "" && pw2 != "" && (pw == pw2) && birthday && frsnm != "" && scnm != "" && email != ""){
+        alert("Success! Your account has been created.");
         bullet[current].classList.add("active");
         progressCheck[current].classList.add("active");
         progressText[current].classList.add("active");
-        alert("Success! Your account has been created.");
     } else if (pw != pw2){
         alert("Error: Passwords do not match. Try again.");
     } else {
         alert("Error: one or more fields are left empty. Try again.");
     }
 }
-
 prev1.addEventListener("click", function(event){
     event.preventDefault();
     bullet[current - 2].classList.remove("active");
