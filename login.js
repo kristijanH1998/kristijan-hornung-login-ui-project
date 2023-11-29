@@ -96,9 +96,9 @@ function new_account(){
 
     if(name != "" && pw != "" && pw2 != "" && (pw == pw2) && birthday && frsnm != "" && scnm != "" && email != ""){
         alert("Success! Your account has been created.");
-        bullet[current].classList.add("active");
-        progressCheck[current].classList.add("active");
-        progressText[current].classList.add("active");
+        bullet[current - 1].classList.add("active");
+        progressCheck[current - 1].classList.add("active");
+        progressText[current - 1].classList.add("active");
     } else if (pw != pw2){
         alert("Error: Passwords do not match. Try again.");
     } else {
