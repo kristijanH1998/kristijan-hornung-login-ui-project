@@ -101,7 +101,6 @@ function new_account(){
         current += 1;
         setTimeout(function(){
             alert("Success! Your account has been created.");
-            location.reload();
         },800);
     } else if (pw != pw2){
         alert("Error: Passwords do not match. Try again.");
