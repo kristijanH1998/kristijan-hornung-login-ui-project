@@ -240,7 +240,8 @@ form input[type="submit"]:hover, .prev-3:hover, .next:hover, .prev-1:hover, .pre
     transform: translateX(-50%);
   }
   .progress-bar .step .bullet.active span{
-    display: none;
+    content: "/2713";
+    color: white;
   }
   .progress-bar .step .bullet:before,
   .progress-bar .step .bullet:after{

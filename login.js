@@ -1,15 +1,3 @@
-function new_account(){
-    var name = document.getElementById("user").value;
-    var pw = document.getElementById("pw").value;
-    var pw2 = document.getElementById("pw2").value;
-    if(name != "" && pw != "" && pw2 != "" && (pw == pw2)){
-        alert("Success! Your account has been created.");
-    } else if (pw != pw2){
-        alert("Error: Passwords do not match. Try again.");
-    } else {
-        alert("Error: one or more fields are left empty. Try again.");
-    }
-}
 function validate() {
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
@@ -70,4 +58,67 @@ prev3.onclick = (()=>{
     book.style.marginLeft = "-640%";
 });
 
+const progressText = document.querySelectorAll(".step p");
+const progressCheck = document.querySelectorAll(".step .check");
+const bullet = document.querySelectorAll(".step .bullet");
+const submitBtn = document.querySelectorAll(".submit");
+let current = 1;
 
+nextFrs.addEventListener("click", function(event){
+    event.preventDefault();
+    bullet[current - 1].classList.add("active");
+    progressCheck[current - 1].classList.add("active");
+    progressText[current - 1].classList.add("active");
+    current += 1;
+});
+next1.addEventListener("click", function(event){
+    event.preventDefault();
+    bullet[current - 1].classList.add("active");
+    progressCheck[current - 1].classList.add("active");
+    progressText[current - 1].classList.add("active");
+    current += 1;
+});
+next2.addEventListener("click", function(event){
+    event.preventDefault();
+    bullet[current - 1].classList.add("active");
+    progressCheck[current - 1].classList.add("active");
+    progressText[current - 1].classList.add("active");
+    current += 1;
+});
+function new_account(){
+    var name = document.getElementById("user").value;
+    var pw = document.getElementById("pw").value;
+    var pw2 = document.getElementById("pw2").value;
+    if(name != "" && pw != "" && pw2 != "" && (pw == pw2)){
+        bullet[current].classList.add("active");
+        progressCheck[current].classList.add("active");
+        progressText[current].classList.add("active");
+        alert("Success! Your account has been created.");
+    } else if (pw != pw2){
+        alert("Error: Passwords do not match. Try again.");
+    } else {
+        alert("Error: one or more fields are left empty. Try again.");
+    }
+}
+
+prev1.addEventListener("click", function(event){
+    event.preventDefault();
+    bullet[current - 2].classList.remove("active");
+    progressCheck[current - 2].classList.remove("active");
+    progressText[current - 2].classList.remove("active");
+    current -= 1;
+});
+prev2.addEventListener("click", function(event){
+    event.preventDefault();
+    bullet[current - 2].classList.remove("active");
+    progressCheck[current - 2].classList.remove("active");
+    progressText[current - 2].classList.remove("active");
+    current -= 1;
+});
+prev3.addEventListener("click", function(event){
+    event.preventDefault();
+    bullet[current - 2].classList.remove("active");
+    progressCheck[current - 2].classList.remove("active");
+    progressText[current - 2].classList.remove("active");
+    current -= 1;
+});
