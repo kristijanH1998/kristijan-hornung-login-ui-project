@@ -20,20 +20,13 @@ const book = document.querySelector(".book");
 let current = 1;
 
 signupBtn.onclick = (()=>{
-    if(current == 1){
-        loginForm.style.marginLeft = "-50%";
-        loginText.style.marginLeft = "-50%";
-    } else if(current == 2){
-        loginForm.style.marginLeft = "-50%";
-        loginText.style.marginLeft = "-50%";
+    loginForm.style.marginLeft = "-50%";
+    loginText.style.marginLeft = "-50%";
+    if(current == 2){
         book.style.marginLeft = "-320%";
     } else if(current == 3){
-        loginForm.style.marginLeft = "-50%";
-        loginText.style.marginLeft = "-50%";
         book.style.marginLeft = "-640%";
     } else if(current == 4){
-        loginForm.style.marginLeft = "-50%";
-        loginText.style.marginLeft = "-50%";
         book.style.marginLeft = "-960%";
     }
 });
