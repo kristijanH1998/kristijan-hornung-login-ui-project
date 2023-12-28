@@ -17,16 +17,32 @@ const loginText = document.querySelector(".title-text .login");
 const signupText = document.querySelector(".title-text .signup");
 
 const book = document.querySelector(".book");
+let current = 1;
 
 signupBtn.onclick = (()=>{
-    loginForm.style.marginLeft = "-50%";
-    loginText.style.marginLeft = "-50%";
+    if(current == 1){
+        loginForm.style.marginLeft = "-50%";
+        loginText.style.marginLeft = "-50%";
+    } else if(current == 2){
+        loginForm.style.marginLeft = "-50%";
+        loginText.style.marginLeft = "-50%";
+        book.style.marginLeft = "-320%";
+    } else if(current == 3){
+        loginForm.style.marginLeft = "-50%";
+        loginText.style.marginLeft = "-50%";
+        book.style.marginLeft = "-640%";
+    } else if(current == 4){
+        loginForm.style.marginLeft = "-50%";
+        loginText.style.marginLeft = "-50%";
+        book.style.marginLeft = "-960%";
+    }
 });
 loginBtn.onclick = (()=>{
     loginForm.style.marginLeft = "0%";
     loginText.style.marginLeft = "0%";
     book.style.marginLeft = "0%";
 });
+
 signupLink.onclick = (()=>{
     signupBtn.click();
     return false;
@@ -62,7 +78,6 @@ const progressText = document.querySelectorAll(".step p");
 const progressCheck = document.querySelectorAll(".step .check");
 const bullet = document.querySelectorAll(".step .bullet");
 const submitBtn = document.querySelectorAll(".submit");
-let current = 1;
 
 nextFrs.addEventListener("click", function(event){
     event.preventDefault();
